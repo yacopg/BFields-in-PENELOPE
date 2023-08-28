@@ -2,7 +2,7 @@
 Implementation of Magnetic Fields into PENELOPE/penEasy Monte Carlo Codes for radiation transport.
 
 ## Preamble
-The PENELOPE distribution includes a library of Fortran routines in the file `penfield.f` to allow the simulation of charged particle transport in the presence of magnetic fields. This `README` outlines the methods I took to use this library with penEasy and the modifications made to the PENELOPE codes to introduce non-uniform magnetic fields into the code.
+The PENELOPE distribution includes a library of Fortran routines in the file `penfield.f` to allow the simulation of charged particle transport in the presence of magnetic fields. This `README` outlines the methods I took to use this library with penEasy and the modifications made to the PENELOPE codes to introduce arbitrary non-uniform magnetic fields into the code without recompilation from a user-defined text document.
 
 I have included here the specific modifications I have made to the PENELOPE source code. I share this for your convenience, but it is provided "as is" without express or implied warranty. This is not a stand-alone project. You will need to obtain the source files for PENELOPE from the Radiation Safety Information Computational Center of the Oak Ridge National Laboratory. 
 
@@ -12,7 +12,7 @@ There are three main files which were edited or added in this framework. They ar
 2. `PenEasy.F`: an all-purpose main steering program.
 3. `EMF.F`: An additional routine to initialize the magnetic field from a text file into PENELOPE/penEasy.
 
-I have also included `WriteBFile.m`: A small MatLab script that writes a magnetic field map into the format expected by the code in `tallyEMF.F`.
+I have also included `WriteBFile.m`: A small MatLab script that writes a magnetic field map into a text document with the format expected by the code in `tallyEMF.F`.
 
 Following instructions in the penEasy manual, the file `PenEasy.F` was edited such that the following lines in the subroutine `jumpx`
 ```
