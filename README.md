@@ -2,9 +2,9 @@
 Implementation of Magnetic Fields into PENELOPE/penEasy Monte Carlo Codes for radiation transport.
 
 ## Preamble
-The PENELOPE distribution includes a library of Fortran routines in the file `penfield.f` to allow the simulation of charged particle transport in the presence of magnetic fields. This appendix (of my MSc thesis) outlines the methods I took to use this library with penEasy and the modifications made to the PENELOPE codes to introduce non-uniform magnetic fields into the code. The source files for PENELOPE can be obtained from the Radiation Safety Information Computational Center of the Oak Ridge National Laboratory. 
+The PENELOPE distribution includes a library of Fortran routines in the file `penfield.f` to allow the simulation of charged particle transport in the presence of magnetic fields. This `README` outlines the methods I took to use this library with penEasy and the modifications made to the PENELOPE codes to introduce non-uniform magnetic fields into the code.
 
-I have included here the specific modifications I have made to the PENELOPE source code. I share this for your convenience, but it is provided "as is" without express or implied warranty.
+I have included here the specific modifications I have made to the PENELOPE source code. I share this for your convenience, but it is provided "as is" without express or implied warranty. This is not a stand-alone project. You will need to obtain the source files for PENELOPE from the Radiation Safety Information Computational Center of the Oak Ridge National Laboratory. 
 
 ## Specifics
 There are three main files which were edited or added in this framework. They are:
