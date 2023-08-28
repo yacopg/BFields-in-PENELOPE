@@ -7,7 +7,9 @@
 %       magnetic field volume. 
 
 %% Example: A simple magnetic field that will result in a uniformily varying magnetic field from 
-% 0 to 10 T over a distance of 50 cm.
+% 0 to 10 T over a distance of 50 cm with the trilinear interpolation algorithm incorporated into
+% the GETEMF subroutine. 
+
 %coordinate grid.
 z_M = [0,0.5];
 y_M = [-0.15,0,0.15];
